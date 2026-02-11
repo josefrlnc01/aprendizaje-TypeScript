@@ -30,5 +30,6 @@ type ArrayConTextoYNumeros = [string, ...number[]]
 const arrayConTextoYNumeros : ArrayConTextoYNumeros = ['hola mundo', 1,2,3,4,5,6,7]
 const [texto, primerNumero, ...resto] = arrayConTextoYNumeros
 
-
+type Config = readonly[server : string, port : number, useSSL : boolean ]
+const dbConfig : Config = ["localhost", 4000, true]
 
